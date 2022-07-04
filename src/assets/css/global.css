@@ -1,0 +1,75 @@
+/* 全局样式表 */
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin: 5px 0 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #868685;
+  background-clip: padding-box;
+  /* border-width-left: 4px; */
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 100px;
+}
+
+/* // 利用border控制悬浮时候滚动条放大 */
+::-webkit-scrollbar-thumb:hover {
+  border-width: 1px;
+}
+
+/* 滚动条两侧的小按钮 */
+::-webkit-scrollbar-button {
+  border-style: solid;
+  /* // background-color: black; */
+
+  height: 8px;
+  width: 8px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement {
+  /* //background-color: black; */
+  border-width: 0 4px 4px 4px;
+  border-color: transparent transparent #878687 transparent;
+}
+
+
+/* Down */
+::-webkit-scrollbar-button:vertical:increment {
+  border-width: 4px 4px 0 4px;
+  border-color: #878687 transparent transparent transparent;
+}

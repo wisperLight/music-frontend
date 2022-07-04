@@ -1,0 +1,20 @@
+.btn(@width; @height; @bgc; @color) {
+  width: @width;
+  height: @height;
+  border-radius: 5px;
+  color: @color;
+  background-color: @bgc;
+}
+
+
+
+// 无边框背景透明的button
+.btn-transparent {
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(234, 234, 234, 0.9);
+  }
+}
